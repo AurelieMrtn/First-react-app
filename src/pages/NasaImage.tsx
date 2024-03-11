@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from '../store';
 import {fetchNasaByQuery} from '../slices/nasaReducer.ts'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 const containerStyle = css`
     display: flex;

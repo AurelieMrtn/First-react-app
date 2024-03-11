@@ -1,6 +1,7 @@
 import * as React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 const formWrapperStyle = css`
     display: flex;
@@ -91,15 +92,15 @@ function NasaForm({onSubmit, resultObjects, setResultObjects}) {
                     {isSubmitted ? 
                     <div css={inputCheckboxContainerStyle}>
                         <div>
-                            <input name="images" type="checkbox" onChange={handleCheck} checked={resultObjects.images} css={inputCheckboxStyle} />
+                            <input id="images" type="checkbox" onChange={handleCheck} checked={resultObjects.images} css={inputCheckboxStyle} />
                             <label htmlFor="images" css={inputLabelStyle}>Images</label>
                         </div>
                         <div>
-                            <input name="videos" type="checkbox" onChange={handleCheck} checked={resultObjects.videos} css={inputCheckboxStyle} />
+                            <input id="videos" type="checkbox" onChange={handleCheck} checked={resultObjects.videos} css={inputCheckboxStyle} />
                             <label htmlFor="videos" css={inputLabelStyle}>Videos</label>
                         </div>
                         <div>
-                            <input name="audios" type="checkbox" onChange={handleCheck} checked={resultObjects.audios} css={inputCheckboxStyle} />
+                            <input id="audios" type="checkbox" onChange={handleCheck} checked={resultObjects.audios} css={inputCheckboxStyle} />
                             <label htmlFor="audios" css={inputLabelStyle}>Audios</label>
                         </div>
                     </div>

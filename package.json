@@ -21,6 +21,8 @@
     "redux-persist": "^6.0.0"
   },
   "devDependencies": {
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@types/redux-logger": "^3.0.13",
