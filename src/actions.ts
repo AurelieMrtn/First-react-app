@@ -1,0 +1,4 @@
+export const ADD_ELEMENT = 'ADD_ELEMENT';
+export const REMOVE_ELEMENT = 'REMOVE_ELEMENT';
+export const CLEAR_CACHE = 'CLEAR_CACHE';
+export const INITIALIZE = 'INITIALIZE';
