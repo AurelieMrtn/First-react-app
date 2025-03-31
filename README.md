@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# React To-Do List & NASA Media Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a simple React application that consists of two pages:
+1. A **To-Do List** where users can add items to a list.
+2. A **NASA Media Search** page where users can search for images, videos, and audio files using the NASA API and select items to display.
 
-Currently, two official plugins are available:
+## Features
+- **To-Do List:**
+  - Users can add items to a list via an input field.
+  - The list persists across page reloads using Redux and local storage.
+- **NASA Media Search:**
+  - Users can search for media using the NASA API.
+  - Users can select and display images, videos, or audio files from the search results.
+- **State Management with Redux:**
+  - Uses Redux for state management.
+  - Implements a custom Redux middleware to persist data in local storage.
+- **No External State Persistence Libraries:**
+  - Redux Persist is not used.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React
+- Redux & React-Redux
+- Custom Redux Middleware for local storage persistence
+- NASA API
 
-## Expanding the ESLint configuration
+## Installation & Usage
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd your-repo
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the development server:
+   ```sh
+   npm start
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Justification of Technical Choices
+- **Redux for State Management:** Ensures predictable state updates and centralizes application data.
+- **Custom Middleware for Local Storage:** Prevents the need for third-party solutions like Redux Persist while ensuring data persistence.
+- **NASA API Integration:** Demonstrates handling API calls and managing asynchronous data fetching.
+- **Minimal Dependencies:** Only React, Redux, and React-Redux are used.
